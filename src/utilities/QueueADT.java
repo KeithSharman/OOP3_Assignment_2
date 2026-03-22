@@ -1,6 +1,5 @@
 package utilities;
 
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
@@ -71,7 +70,6 @@ public interface QueueADT<E> {
     /**
      * Returns an iterator over the items in this queue.
      * The iterator traverses items from front to rear.
-     * The iterator's remove() method is not supported.
      *
      * Preconditions:
      * - None.

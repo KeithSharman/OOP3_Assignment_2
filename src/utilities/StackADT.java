@@ -1,6 +1,5 @@
 package utilities;
 
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
@@ -71,7 +70,6 @@ public interface StackADT<E> {
     /**
      * Returns an iterator over the items in this stack.
      * The iterator traverses items from top to bottom.
-     * The iterator's remove() method is not supported.
      *
      * Preconditions:
      * - None.
