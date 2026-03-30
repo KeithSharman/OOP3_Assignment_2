@@ -68,4 +68,3 @@ public class XMLParser {
      if (isClosing) {
          tag = "/" + tag;
      }}}}
-

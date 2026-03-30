@@ -2,6 +2,9 @@ package utilities;
 
 import java.util.NoSuchElementException;
 
+//need to import concrete class if we want to use the create() method
+
+
 /**
  * ADT for a stack.
  *
@@ -176,4 +179,23 @@ public interface StackADT<E> {
      * - The stack becomes empty.
      */
     void clear();
+    
+    /**
+     * added a create method after submission of part 1
+     * My understanding is that this is unusual for an interface but whatever.
+     * 
+     * Creates and returns an empty stack.
+     * 
+     * Preconditions:
+     * - A concrete class MyStack exists
+     * 
+     * Postconditions:
+     * - An empty stack object of the MyStack class is created.
+     *
+     * @param <E> the type of element stored in the stack
+     * @return a new empty stack
+     */
+    static <E> StackADT<E> create() {
+        return new MyStack<>();
+    }
 }
