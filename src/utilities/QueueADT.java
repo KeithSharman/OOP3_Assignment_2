@@ -2,6 +2,8 @@ package utilities;
 
 import java.util.NoSuchElementException;
 
+//need to import concrete class if we want to use the create() method
+
 /**
  * ADT for a queue.
  *
@@ -173,4 +175,23 @@ public interface QueueADT<E> {
      * - The queue becomes empty.
      */
     void dequeueAll();
+    
+    /**
+     * added a create method after submission of part 1
+     * My understanding is that this is unusual for an interface but whatever.
+     * 
+     * Creates and returns an empty queue.
+     * 
+     * Preconditions:
+     * - A concrete class MyQueue exists
+     * 
+     * Postconditions:
+     * - An empty queue object of the MyStack class is created.
+     *
+     * @param <E> the type of element stored in the queue
+     * @return a new empty queue
+     */
+    static <E> QueueADT<E> create() {
+        return new MyQueue<>();
+    }
 }
